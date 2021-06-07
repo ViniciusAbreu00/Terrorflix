@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root{
+    --preto: #161B1B;
+    --verde: #59BA43;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.logo{
+    color: var(--verde);
+    font-family: 'Arial black';
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.container .menu{
+    font-family: 'Abril Fatface', cursive;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #B3B3B3;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header nav a:hover{
+    color: #FFFFFF;
+}
+
+/* Filme Principal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/imgs/bckgd-img-invocação-do-mal-3.jpg);
+    
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around ;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    padding: 60px;
+}
+
+.filme-principal .botoes{
+    margin-top: 30px;
+}
+
+.titulo{
+    font-size: 40px;
+}
+.container .botoes{
+    display: flex;
+    align-items: center;
+}
+
+.container .botoes button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 1%;
+    border: none;
+    background-color: #ffffffe8;
+    height: 40px;
+    width: 150px;
+    color: black;
+
+    transition: 0.5s;
+}
+
+.container .botoes button svg{
+    margin: 10px;
+}
+
+.container .botoes button:nth-child(2){
+    background-color: #5c6064;
+    color: white;
+}
+
+.container .botoes button:hover{
+    background-color: #ffffff9c;
+}
+.container .botoes button:nth-child(2):hover{
+    background-color: #88898ac5;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+    padding: 1%;
+}
+
+.carrosel-titulo{
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
